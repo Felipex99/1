@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  color: #fff;
+  color: #333;
   margin: 33px; }
 
 body, p, ol, ul, td {
@@ -9,19 +9,19 @@ body, p, ol, ul, td {
   line-height: 18px; }
 
 pre {
-  background-color: #fff;
+  background-color: #eee;
   padding: 10px;
   font-size: 11px; }
 
 a {
-  color: #eee; }
+  color: #000; }
 
 a:visited {
   color: #666; }
 
 a:hover {
   color: #fff;
-  background-color: #fff; }
+  background-color: #000; }
 
 th {
   padding-bottom: 5px; }

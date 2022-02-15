@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<!--<div class="jumbotron">
+  <h1 class="display-4">Cliente Cadastrado!</h1>
+  <p class="lead">Agora o cliente poderá desfrutar das nossas modalidades esportivas.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+</div>
+-->
 <p>
   <strong>Nome:</strong>
   <%= @ncliente.nome %>
@@ -10,5 +17,5 @@
   <%= @ncliente.cpf %>
 </p>
 
-<%= link_to 'Edit', edit_ncliente_path(@ncliente) %> |
-<%= link_to 'Back', nclientes_path %>
+<%= link_to 'Editar', edit_ncliente_path(@ncliente) ,class:"btn btn-dark"%> 
+<%= link_to 'Voltar', nclientes_path, class:"btn btn-dark" %>

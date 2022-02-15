@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Nclientes</h1>
+<h1>Clientes</h1>
 
-<table>
-  <thead>
+<table class ="table table-striped table-hover">
+  <thead class="thead-dark">
     <tr>
       <th>Nome</th>
       <th>Cpf</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= ncliente.nome %></td>
         <td><%= ncliente.cpf %></td>
-        <td><%= link_to 'Show', ncliente %></td>
-        <td><%= link_to 'Edit', edit_ncliente_path(ncliente) %></td>
-        <td><%= link_to 'Destroy', ncliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', ncliente,class:"btn btn-dark" %></td>
+        <td><%= link_to 'Editar', edit_ncliente_path(ncliente),class:"btn btn-warning" %></td>
+        <td><%= link_to 'Apagar', ncliente, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Ncliente', new_ncliente_path %>
+<%= link_to 'Novo Cliente', new_ncliente_path,class:"btn btn-dark" %>

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :nclientes
-  resources :clientes
   #get 'home/index'
   root 'home#index'
   get 'home/pag2'
